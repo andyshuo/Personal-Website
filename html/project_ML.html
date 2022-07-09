@@ -4,10 +4,11 @@
     <title>Tsai Shuo Andy, Kuo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ml_page.css">
     </head>
     <body>
         <div class="header">
+            <img src="../image/top_bg.jpg" alt="top_bg" width=1000px>
             <h1>Tsai Shuo Andy, Kuo</h1>
         </div>
         
@@ -20,7 +21,47 @@
 
 
         <div class="main">
-            "Introduce projects"
+            <h2>Cardiovascular Disease Classification</h2>
+            <div class="Parent">
+                <div class="ecg_image">
+                    <img src="../image/ecg.png" width=100%>
+                </div>
+                <div class="ecg_purpose">
+                    <h3>Purpose:</h3>
+                    This is a project that aim to read ECG data as input and classifies different cardiovascular disease using deep neural network.<br>
+                    Machine learning helps doctors to classifies different diseaeses automatically and robustnessly.<br>
+                    This reduces human errors and help patients 24/7.<br>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="Parent">
+                <div class="ecg_preprocess">
+                    <h3>Pre-processing</h3>
+                    Signals are truncated to 10s and filtered with 3rd order butterworth low pass filter of cutoff frequency at 10hz.
+                </div>                
+            </div>
+            <div class="Parent">
+                <div class="model">
+                    <h3>Model:</h3>
+                    <div class="parent2">
+                        <div class="res_img">
+                            <img src = "../image/residual_block.png" width=50%>
+                        </div>
+                        <div class="full_img">
+                            <img src = "../image/full_model.png" width=50%>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="model_text">
+                    The final model is a deep residual neural network with LSTM attention mechanism.
+                    The input shape is 12x5000 for 12 leads ECG signals and 5000 
+                </div>
+
+                
+            </div>
         </div>
 
 
