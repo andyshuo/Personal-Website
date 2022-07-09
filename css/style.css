@@ -1,3 +1,9 @@
+
+.header {
+  font-size: 20px;
+  text-align: center;
+}
+
 /* Style the top navigation bar */
 .navbar {
     overflow: hidden; /* Hide overflow */
@@ -39,7 +45,13 @@
   }
   
   .footer {
+    font-size: 10px;
     padding: 20px;
     text-align:center;
     background:#ddd;
+  }
+
+  .main {
+    font-size: 30px;
+    text-align:center;
   }
