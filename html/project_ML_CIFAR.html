@@ -26,16 +26,16 @@
             <h4>Data Augmentation</h4>
             <div class="text">
                 
-                Data is first augmented in 2 steps. First horizontal flipping the images, then cropping the images.<br>
-                10000 images were given but 10000 extra is obtained by flipping image, 10000 extra is obtained by cropping image, and 10000 is obtained by both flipping and cropping image.
-                In result 40000 is used in this classification task
+                Before applying to any model, I augmented data. 
+                They are horizontal flipping and cropping.<br>
+                Initially, they were only 10000 images, I obtained 30000 more data.
             </div>
             
             <br>
             <div class="Parent">
                 <img src="../image/cnn.png" >
                 <div class="right_text">
-                    One of my solition is a Deep CNN.<br>
+                    One of my solution is a Deep CNN.<br>
                     Please take a look at left image.
                     
                     
@@ -45,10 +45,11 @@
             
             <h3>Support Vector Mahcine</h3>
             <div class="mid_text">
-                To use support vector machine, 15876 features are extracted from 32x32 image with "hog" feature extracting function.
+                <!--To use a support vector machine, 15876 features are extracted from 32x32 images with "hog" feature extracting function.-->
+                I obtained 15876 features using "hog" feature extracting function.
                 <br>
                 The features are then reduced by principal component analysis(PCA).<br>
-                After PCA, It is then fed to support vector machine.
+                After PCA, images are then fed to a support vector machine.
             </div>
 
 

@@ -30,9 +30,9 @@
                 
                 <div class="right_text">
                     
-                    This is a project that aim to read ECG data as input and classifies different cardiovascular disease using deep neural network.<br>
-                    Machine learning helps doctors to classifies different diseaeses automatically and robustnessly.<br>
-                    This reduces human errors and help patients 24/7.<br>
+                    The project aims to read ECG data as input and classifies different cardiovascular disease using a deep neural network.<br>
+                    Machine learning helps doctors to classify different diseases automatically and robustness.<br>
+                    This reduces human errors and helps patients 24/7.<br>
                     
                     
                 </div>
@@ -41,7 +41,8 @@
 
             <h3>Pre-processing</h3>
             <div class="text">
-                Signals are truncated to 10s and filtered with 3rd order butterworth low pass filter of cutoff frequency at 10hz.
+                
+                I first truncated signals to 10s and filtered them with 3rd order Butterworth low pass filer of cutoff frequency at 10hz.
             </div>
             <br>
             <h3>Model:</h3>
@@ -51,14 +52,14 @@
                 <img src = "../image/residual_block.png" width=30%>
 
                 <div class="right_text">
-                    I tried different model.
-                    I tried to extract HRV features and merged in to the neural network.
+                    I tried different models.
+                    I tried to extract HRV features and merged them into the neural network.
                     I also tried increasing ResBlocks, but it did not work well.
                     <br>
                     <br>
                     The final model is a deep residual neural network with LSTM attention mechanism.
                     The input shape is 12x5000 for 12 leads ECG signals and 5000 data points for a 10s/500Hz signal data.
-                    This model is trained with Adam optimizer, binary cross-entropy as loss and learning rate at 1e-4.
+                    This model is trained with Adam optimizer, binary cross-entropy as loss, and learning rate at 1e-4.
                 </div>
             
                 
@@ -69,7 +70,7 @@
                 <div class="right_text">
                     This is the final result of my project.
                     It didn't work well.
-                    The model can only identify between sinus rhythm and others diseases.
+                    The model can only identify sinus rhythm and others diseases.
                 </div>
             </div>
         </div>
