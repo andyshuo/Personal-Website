@@ -60,6 +60,7 @@
       min-height: 100vh;
       align-items:center;
       background-color: #E0E0E0;
+      justify-content: center;
     }
     
     .Parent{
@@ -67,9 +68,10 @@
         flex-direction: row;
     }
 
-    .ecg_purpose{
-        width:400;
+    .text{
+        max-width:800px;
         font-size:20px;
+        min-width:400px;
     }
 
     .ecg_preprocess{
@@ -79,9 +81,39 @@
 
     .main{
         font-size:25px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .parent2{
         display:flex;
         flex-direction: row;
+    }
+
+    .mid_text{
+      width:800px;
+      font-size:20px;
+      text-align: center;
+      
+    }
+
+    .right_text{
+      min-width:500px;
+      
+      font-size:20px;
+      text-align:center;
+    }
+
+    .top_down_container{
+      display:flex;
+      flex-direction: column;
+    }
+
+    .mid_text_left_align{
+      font-size:20px;
+      text-align: left;
+      align-self: center;
+      max-width: 800px;
     }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Tsai Shuo Andy, Kuo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/ml_CVD.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="../image/top_bg.jpg" alt="top_bg" width=1000px>
+            <h1>Tsai Shuo Andy, Kuo</h1>
+        </div>
+        
+        <div class="navbar">
+            <a href="about.html">About Me</a>
+            <a href="project.html">Projects</a>
+            <!--<a href="extra.html">Extra Activities</a>-->
+        </div>
+
+
+
+        <div class="main">
+            <h2>CIFAR Classification</h2>
+            <h3>CNN</h3>
+            <h4>Data Augmentation</h4>
+            <div class="text">
+                
+                Data is first augmented in 2 steps. First horizontal flipping the images, then cropping the images.<br>
+                10000 images were given but 10000 extra is obtained by flipping image, 10000 extra is obtained by cropping image, and 10000 is obtained by both flipping and cropping image.
+                In result 40000 is used in this classification task
+            </div>
+            
+            <br>
+            <div class="Parent">
+                <img src="../image/cnn.png" >
+                <div class="right_text">
+                    One of my solition is a Deep CNN.<br>
+                    Please take a look at left image.
+                    
+                    
+
+                </div>
+            </div>
+            
+            <h3>Support Vector Mahcine</h3>
+            <div class="mid_text">
+                To use support vector machine, 15876 features are extracted from 32x32 image with "hog" feature extracting function.
+                <br>
+                The features are then reduced by principal component analysis(PCA).<br>
+                After PCA, It is then fed to support vector machine.
+            </div>
+
+
+            <h3>Result</h3>
+            <div class="Parent">
+                <div class="top_down_container">
+                    <img src="../image/cnn_result.png" width:50%>
+                    <img src="../image/SVM_result.png" width:50%>
+                </div>
+                <div class="right_text">
+                    The upper image at left is CNN's result and the lower one is SVM result.
+                    <br>
+                    CNN worked better than SVM in result.
+                    There are much more room of improvement.
+                </div>
+            </div>
+
+        </div>
+
+
+        <h4>Download Project Dissertation: <a href="https://drive.google.com/file/d/1djRLI97uIfEfFSY4PSuiohK2c8212qRk/view?usp=sharing">HERE</a></h4>
+        <h4>Download Project Poster: <a href="https://drive.google.com/file/d/1zxg9C9oQkto29I0KSSqmNCwcKcUI9zs7/view?usp=sharing">HERE</a></h4>
+        <h4>Project Github: <a href= "https://github.com/andyshuo/Cardiac_Abnormalities_Classification_Playground">HERE</a>(Only experiment code.)</h4>
+
+
+        <div class="footer">
+            <h2>
+                Contact:<br>
+                Email: andyshuo@hotmail.com<br>
+                Telephone: +81 80 1624 0246<br>
+                Address: Room 103, Miranda, 2-25-4, Iriya, Adachi City, Tokyo, Japan<br>
+                <a href="https://github.com/andyshuo"><img src="../image/github.png" alt= "github" width=30></a><br>
+                Download my CV: <a href="https://docs.google.com/document/d/1mwPpBa8Vx7N2wVYvqi0dY1WIAZV1HdSU/edit?usp=sharing&ouid=101000163432745351394&rtpof=true&sd=true">HERE</a>
+                
+            </h2>
+        </div>
+    </body>
+</html>

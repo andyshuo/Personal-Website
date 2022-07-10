@@ -59,16 +59,25 @@
 
     .ML_text{
       position:absolute;
-      top:50%;
+      top:15%;
       left:50%;
-      color:white;
-      font-size:50px;
+      color:red;
+      font-size:30px;
       transform: translate(-50%, -50%);
     }
 
     .software_link{
       position: relative;
       color:white;
+    }
+
+    .cifar_text{
+      position: absolute;
+      top:10%;
+      left:50%;
+      color:black;
+      font-size:50px;
+      transform:translate(-50%,-50%);
     }
 
     .software_text{
@@ -92,4 +101,12 @@
       background-color: #E0E0E0;
     }
     
-    
+
+    .gomoku_text{
+      position:absolute;
+      top:5%;
+      left:50%;
+      color:black;
+      font-size:50px;
+      transform:translate(-50%,-50%);
+    }

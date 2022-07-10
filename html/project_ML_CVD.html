@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Tsai Shuo Andy, Kuo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/ml_CVD.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="../image/top_bg.jpg" alt="top_bg" width=1000px>
+            <h1>Tsai Shuo Andy, Kuo</h1>
+        </div>
+        
+        <div class="navbar">
+            <a href="about.html">About Me</a>
+            <a href="project.html">Projects</a>
+            <!--<a href="extra.html">Extra Activities</a>-->
+        </div>
+
+
+
+        <div class="main">
+            <h2>Cardiovascular Disease Classification</h2>
+            <h3>Purpose:</h3>
+            <div class="Parent">
+                <div class="ecg_image">
+                    <img src="../image/ecg.png" width=100%>
+                </div>
+                
+                <div class="right_text">
+                    
+                    This is a project that aim to read ECG data as input and classifies different cardiovascular disease using deep neural network.<br>
+                    Machine learning helps doctors to classifies different diseaeses automatically and robustnessly.<br>
+                    This reduces human errors and help patients 24/7.<br>
+                    
+                    
+                </div>
+                
+            </div>
+
+            <h3>Pre-processing</h3>
+            <div class="text">
+                Signals are truncated to 10s and filtered with 3rd order butterworth low pass filter of cutoff frequency at 10hz.
+            </div>
+            <br>
+            <h3>Model:</h3>
+            <div class="Parent">
+                
+
+                <img src = "../image/residual_block.png" width=30%>
+
+                <div class="right_text">
+                    I tried different model.
+                    I tried to extract HRV features and merged in to the neural network.
+                    I also tried increasing ResBlocks, but it did not work well.
+                    <br>
+                    <br>
+                    The final model is a deep residual neural network with LSTM attention mechanism.
+                    The input shape is 12x5000 for 12 leads ECG signals and 5000 data points for a 10s/500Hz signal data.
+                    This model is trained with Adam optimizer, binary cross-entropy as loss and learning rate at 1e-4.
+                </div>
+            
+                
+            </div>
+            <h3>Result</h3>
+            <div class="Parent">
+                <img src="../image/neural_result.png" width = 50%>
+                <div class="right_text">
+                    This is the final result of my project.
+                    It didn't work well.
+                    The model can only identify between sinus rhythm and others diseases.
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!--<h4>Download Project Dissertation: <a href="https://drive.google.com/file/d/1djRLI97uIfEfFSY4PSuiohK2c8212qRk/view?usp=sharing">HERE</a></h4>-->
+        <h4>Download Project Poster: <a href="https://drive.google.com/file/d/1zxg9C9oQkto29I0KSSqmNCwcKcUI9zs7/view?usp=sharing">HERE</a></h4>
+        <h4>Project Github: <a href= "https://github.com/andyshuo/Cardiac_Abnormalities_Classification_Playground">HERE</a>(Only experiment code.)</h4>
+
+
+        <div class="footer">
+            <h2>
+                Contact:<br>
+                Email: andyshuo@hotmail.com<br>
+                Telephone: +81 80 1624 0246<br>
+                Address: Room 103, Miranda, 2-25-4, Iriya, Adachi City, Tokyo, Japan<br>
+                <a href="https://github.com/andyshuo"><img src="../image/github.png" alt= "github" width=30></a><br>
+                Download my CV: <a href="https://docs.google.com/document/d/1mwPpBa8Vx7N2wVYvqi0dY1WIAZV1HdSU/edit?usp=sharing&ouid=101000163432745351394&rtpof=true&sd=true">HERE</a>
+                
+            </h2>
+        </div>
+    </body>
+</html>
